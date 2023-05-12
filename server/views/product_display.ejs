@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <section class="px-5 py-10 lg:py-20 xl:max-w-6xl xl:mx-auto grid grid-cols-1 gap-5 lg:gap-10 xl:gap-20" style="background-color: white; color: black;">
+        <h2 style="font-size: 40px; text-align: center; font-weight: 600;">Our Products</h2>   
+         <% products.forEach(product => { %>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <img src = "<%=product.img1%>" class = "img-fluid">
+                </div>
+                <div class = "col-md-6">
+                    <p>Product Name : <%=product.product_name%></p>
+                    <p>Product Description : <%=product.description%></p>
+                    
+                </div>
+            </div>
+            <br>
+            <br>
+            <% }) %>
+            
+    </section>
+          
+          
+          
+          
+          
+          
+
+</body>
+</html>

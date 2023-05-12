@@ -1,0 +1,18 @@
+.clients1{
+    display:flex;
+    margin-top:100px;
+    margin-bottom:150px;
+    justify-content: space-around;
+}
+.clients2{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.imgs img:hover{
+  box-shadow: 5px 10px 18px green;
+  height:150px;
+  width:150px;
+}
+
+
