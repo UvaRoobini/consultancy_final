@@ -3,45 +3,43 @@ import "../Styles/Footer.css";
 
 function Footer() {
   return (
-    <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          {/* Column1 */}
-          <div className="col">
-            <h4 style={{color:"black"}}>Warriors Power System</h4>
-            <h1 className="list-unstyled">
-              <li><h5>No 15 Warrior House,</h5></li>
-              <li><h5>Bharathidhasan Street Teachers Colony,</h5></li>
-              <li><h5> Collectorate, Erode - 638011</h5></li>
-            </h1>
-          </div>
-          {/* Column2 */}
-          <div className="col">
-            <h4 style={{color:"black"}}>Timings</h4>
-            <ui className="list-unstyled">
-              <li>Mon - Sat  Open 24 Hrs</li>
-              <li> Sun Closed - Closed</li>
-            </ui>
-          </div>
-          {/* Column3 */}
-          <div className="col">
-            <h4 style={{color:"black"}}>EMAIL</h4>
-            <ui className="list-unstyled">
-              <li>warriorspowersystem@gmail.com</li>
-              <li><h4 style={{color:"black"}}>PHONE NUMBER</h4></li>
-              <li>000-000-000-000</li>
-            </ui>
-          </div>
-        </div>
-        <hr />
-        <div className="row" style={{alignItems:"baseline"}}>
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} WARRIORS POWER SYSTEM | All rights reserved |
-            Terms Of Service | Privacy
-          </p>
-        </div>
+    <div className="main-footer" style={{backgroundColor: '#e5f4ea'}}>
+  <div className="container">
+    <div className="row">
+      {/* Column1 */}
+      <div className="col-md-4 mb-3">
+        <h4 style={{color:"#003300"}}>Warriors Power System</h4>
+        <ul className="list-unstyled">
+          <li><p><i className="fas fa-map-marker-alt mr-2"></i>No 15 Warrior House, Bharathidhasan Street Teachers Colony, Collectorate, Erode - 638011</p></li>
+        </ul>
+      </div>
+      {/* Column2 */}
+      <div className="col-md-4 mb-3">
+        <h4 style={{color:"#003300"}}>Timings</h4>
+        <ul className="list-unstyled">
+          <li><p><i className="fas fa-clock mr-2"></i>Mon - Sat  Open 24 Hrs</p></li>
+          <li><p><i className="fas fa-clock mr-2"></i>Sun Closed - Closed</p></li>
+        </ul>
+      </div>
+      {/* Column3 */}
+      <div className="col-md-4 mb-3">
+        <h4 style={{color:"#003300"}}>Contact Us</h4>
+        <ul className="list-unstyled">
+          <li><p><i className="fas fa-envelope mr-2"></i>warriorspowersystem@gmail.com</p></li>
+          <li><p><i className="fas fa-phone mr-2"></i>000-000-000-000</p></li>
+        </ul>
       </div>
     </div>
+    <hr />
+    <div className="row" style={{alignItems:"baseline"}}>
+      <p className="col-sm" style={{color:"#003300"}}>
+        &copy;{new Date().getFullYear()} WARRIORS POWER SYSTEM | All rights reserved |
+        <a href="/" style={{color:"#003300"}}> Terms Of Service</a> | <a href="/" style={{color:"#003300"}}>Privacy</a>
+      </p>
+    </div>
+  </div>
+</div>
+
   );
 }
 

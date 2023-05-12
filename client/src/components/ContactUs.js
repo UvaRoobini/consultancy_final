@@ -83,34 +83,35 @@ function ContactUs() {
                     </div>
                 </form>
             </div> */}
-            <div className="main" >
-        <div className="sub-main">
-        <div className="login"  style={{border:'2px solid black',width:"500px",height:"600px",alignItems:"center",padding:"100px"}}>       
-            <h1 style={{paddingLeft:"80px"}}>Feedback</h1>
-            
-           <br></br>
-            <form >
-                
-                <div>
-                <input  style={{border:'2px solid black'}} onChange={(e)=>{setname(e.target.value)}} placeholder="name" value={name}/>
-                </div>
-                <br></br>
-                <div>
-                <input  style={{border:'2px solid black'}} onChange={(e)=>{setemail(e.target.value)}} placeholder="email" value={email}/>
-                </div>
-                <br></br>
+            <div className="main">
+  <div className="sub-main" style={{ border: '2px solid black', width: "450px", height: "550px", alignItems: "center", padding: "50px",backgroundColor: "#f0f0f0" }}>
+    <div className="login">
+      <h1 style={{ paddingLeft: "60px" }}>Feedback</h1>
 
-               <div>
-                <input   style={{border:'2px solid black'}} type="text" onChange={(e)=>{setmessage(e.target.value)}} placeholder="Type your feedback" value={message}/>
-                </div>
-                <br></br>
+      <br></br>
+      <form>
+        <div>
+          <input style={{ border: '2px solid black', width: "100%" }} onChange={(e) => { setname(e.target.value) }} placeholder="Name" value={name} />
+        </div>
+        <br></br>
+        <div>
+          <input style={{ border: '2px solid black', width: "100%" }} onChange={(e) => { setemail(e.target.value) }} placeholder="Email" value={email} />
+        </div>
+        <br></br>
 
-                <input className="button"  style={{border:'2px solid black'}} type="submit" onClick={(e)=>SendMail(e)} />
-            
-            </form>
-            </div>
+        <div>
+          <input style={{ border: '2px solid black', width: "100%" }} type="text" onChange={(e) => { setmessage(e.target.value) }} placeholder="Type your feedback" value={message} />
         </div>
-        </div>
+        <br></br>
+
+        <input className="button" style={{ border: '2px solid black', width: "100%" }} type="submit" onClick={(e) => SendMail(e)} />
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
         </div>
 
         </section>

@@ -3,11 +3,12 @@ import './../Styles/AboutUs.css';
 import solar5 from '../images/solar5.jpg';
 import {Link} from 'react-router-dom';
 import imgg from '../images/prosandconsimg.jpeg'
+import aboutusimg from '../images/aboutusimg.jpg';
 function ContactUs() {
   return (
     <div>
       <div class="about">
-      <img style={{width:"500px"}} src={imgg} alt="img"/>
+      <img className="animated-image " src={aboutusimg} alt="img"/>
         <div class="inner-section">
             <h1><bold>About Us</bold></h1>
             <p class="text">

@@ -40,44 +40,41 @@ function Quote() {
     return(
        <>
        <Navbar/>
-        <div style={{marginTop:"35px",marginBottom:"35px", paddingLeft:"420px"}}>
-            
-        <div className="main" >
-        <div className="sub-main">
-        <div className="login"  style={{border:'2px solid black',width:"500px",height:"600px",alignItems:"center",padding:"100px"}}>
-            <div className="img">
-                <div className="container-image" style={{paddingLeft:"100px"}}>
-                       <IoMdContact size={100}/>
-                  </div>
-            
-            <h1 style={{paddingLeft:"80px"}}>QUERY</h1>
-            
-           <br></br>
-            <form >
-                
-                <div>
-                <input  style={{border:'2px solid black'}} onChange={(e)=>{setname(e.target.value)}} placeholder="name" value={name}/>
-                </div>
-                <br></br>
-                <div>
-                <input  style={{border:'2px solid black'}} onChange={(e)=>{setemail(e.target.value)}} placeholder="email" value={email}/>
-                </div>
-                <br></br>
+       <div style={{marginTop:"35px",marginBottom:"35px", paddingLeft:"420px"}}>
+  <div className="main">
+    <div className="sub-main">
+      <div className="login" style={{border:'2px solid black',width:"500px",height:"600px",alignItems:"center",padding:"100px"}}>
+        <div className="img">
+          <div className="container-image" style={{paddingLeft:"100px"}}>
+            <IoMdContact size={100} color="rgb(175, 225, 175)" />
+          </div>
+          <h1 style={{paddingLeft:"80px", color: "rgb(50, 172, 109)"}}>QUERY</h1>
+        </div>
+        <br></br>
+        <form style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+          <div>
+            <input style={{border: '2px solid black', padding: '10px', borderRadius: '5px', marginBottom: '10px'}} 
+                   onChange={(e) => {setname(e.target.value)}} placeholder="name" value={name}/>
+          </div>
 
-               <div>
-                <input   style={{border:'2px solid black'}} type="text" onChange={(e)=>{setmessage(e.target.value)}} placeholder="Type your querry" value={message}/>
-                </div>
-                <br></br>
+          <div>
+            <input style={{border: '2px solid black', padding: '10px', borderRadius: '5px', marginBottom: '10px'}} 
+                   onChange={(e) => {setemail(e.target.value)}} placeholder="email" value={email}/>
+          </div>
 
-                <input className="button"  style={{border:'2px solid black'}} type="submit" onClick={(e)=>SendMail(e)} />
-            
-            </form>
-            </div>
-        </div>
-        </div>
-        </div>
-        
-        </div>
+          <div>
+            <input style={{border: '2px solid black', padding: '10px', borderRadius: '5px', marginBottom: '10px'}} 
+                   type="text" onChange={(e) => {setmessage(e.target.value)}} placeholder="Type your query" value={message}/>
+          </div>
+
+          <input className="button" style={{backgroundColor: 'rgb(175, 225, 175)', color: 'white', border: 'none', padding: '10px', borderRadius: '5px', cursor: 'pointer'}}
+                 type="submit" onClick={(e) => SendMail(e)} value="Submit"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
         <Footer/>
         </>
     )
